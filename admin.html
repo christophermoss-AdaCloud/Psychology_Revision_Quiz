@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Guide: Psychology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Revision Guide: Psychology</h1>
+            <p class="text-xl opacity-90">Comprehensive Study Guide & Interactive Quiz</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 glass shadow-md">
+        <div class="max-w-4xl mx-auto flex justify-around p-2">
+            <button onclick="showTab('study')" id="btn-study" class="flex-1 py-3 text-sm md:text-base font-semibold border-b-2 border-indigo-600 text-indigo-600 transition-all">
+                <i class="fas fa-book-open mr-2"></i>Study Notes
+            </button>
+            <button onclick="showTab('quiz')" id="btn-quiz" class="flex-1 py-3 text-sm md:text-base font-semibold border-b-2 border-transparent text-gray-500 hover:text-indigo-600 transition-all">
+                <i class="fas fa-vial mr-2"></i>Practice Quiz
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto p-4 md:p-8">
+
+        <!-- STUDY NOTES SECTION -->
+        <section id="study" class="tab-content active space-y-12">
+            
+            <!-- Section 1: Social Influence -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-indigo-50 px-6 py-4 border-b border-indigo-100">
+                    <h2 class="text-2xl font-bold text-indigo-900">1. Social Influence</h2>
+                </div>
+                <div class="p-6 space-y-6">
+                    <div>
+                        <h3 class="font-bold text-lg text-indigo-700 mb-2">Types of Conformity</h3>
+                        <p class="mb-2"><strong>Internalisation:</strong> Deepest level; person genuinely accepts group norms. Result in private and public change.</p>
+                        <p class="mb-2"><strong>Compliance:</strong> Superficial; "going along with others" in public but privately disagreeing.</p>
+                        <p><strong>Identification:</strong> Conforming to a group we value to be part of it.</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-xl">
+                            <h4 class="font-semibold mb-2">Variables (Asch)</h4>
+                            <ul class="list-disc ml-5 space-y-1 text-sm">
+                                <li><strong>Group Size:</strong> Conformity rose to 31.8% with 3 confederates.</li>
+                                <li><strong>Unanimity:</strong> A dissenter reduced conformity by 25%.</li>
+                                <li><strong>Task Difficulty:</strong> Difficulty increase leads to ISI.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl">
+                            <h4 class="font-semibold mb-2">Obedience (Milgram)</h4>
+                            <ul class="list-disc ml-5 space-y-1 text-sm">
+                                <li><strong>Proximity:</strong> Higher when closer to authority.</li>
+                                <li><strong>Location:</strong> Prestige (Yale) increases obedience.</li>
+                                <li><strong>Uniform:</strong> Laboratory coat = legitimacy.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg text-indigo-700 mb-2">Resistance & Minority Influence</h3>
+                        <p><strong>Social Support:</strong> Presence of others who resist helps break unanimity.</p>
+                        <p><strong>Locus of Control (LOC):</strong> Internals believe they control their own destiny; more likely to resist.</p>
+                        <p><strong>Minority Influence:</strong> Requires <strong>Consistency</strong> (not changing view), <strong>Commitment</strong> (Augmentation principle), and <strong>Flexibility</strong> (negotiation).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Research Methods -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-emerald-50 px-6 py-4 border-b border-emerald-100">
+                    <h2 class="text-2xl font-bold text-emerald-900">2. Research Methods</h2>
+                </div>
+                <div class="p-6 space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-emerald-700 mb-2">Experimental Methods</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Lab:</strong> High control, low ecological validity.</li>
+                                <li><strong>Field:</strong> Natural setting, high validity, low control.</li>
+                                <li><strong>Natural:</strong> IV varies naturally (e.g., impact of TV).</li>
+                                <li><strong>Quasi:</strong> Based on existing differences (e.g., gender).</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-emerald-700 mb-2">Observations</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><strong>Covert vs Overt:</strong> Hidden vs Open.</li>
+                                <li><strong>Participant:</strong> Researcher joins group.</li>
+                                <li><strong>Sampling:</strong> Event (count behaviors) or Time (observe at intervals).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-emerald-700 mb-2">Self-Report & Others</h4>
+                        <p><strong>Interviews:</strong> Structured (fixed questions) vs Unstructured (conversation-like).</p>
+                        <p><strong>Content Analysis:</strong> Indirect study of communication (coding/thematic analysis).</p>
+                        <p><strong>Case Studies:</strong> In-depth investigation of an individual or small group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Scientific Processes -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-amber-50 px-6 py-4 border-b border-amber-100">
+                    <h2 class="text-2xl font-bold text-amber-900">3. Scientific Processes</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-amber-700 uppercase">Foundations</h4>
+                            <p><strong>Hypotheses:</strong> Directional (states nature of difference) vs Non-directional.</p>
+                            <p><strong>Sampling:</strong> Random, Systematic, Stratified, Opportunity, Volunteer.</p>
+                            <p><strong>Pilot Studies:</strong> Small scale trial to check procedure/feasibility.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-amber-700 uppercase">Control & Ethics</h4>
+                            <p><strong>Reliability:</strong> Consistency. Measured by Test-retest or Inter-observer.</p>
+                            <p><strong>Validity:</strong> Truthfulness. Face, Concurrent, Ecological, Temporal.</p>
+                            <p><strong>Ethics:</strong> Informed consent, Deception, Protection from harm, Privacy.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-amber-700 uppercase">Features of Science</h4>
+                            <p><strong>Objectivity:</strong> Bias-free.</p>
+                            <p><strong>Replicability:</strong> Can be repeated.</p>
+                            <p><strong>Falsifiability:</strong> Can be proven wrong.</p>
+                            <p><strong>Paradigms:</strong> Shared set of assumptions (shifts occur over time).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz" class="tab-content space-y-6">
+            <div id="quiz-container" class="bg-white rounded-2xl shadow-xl p-6 md:p-10 border border-gray-200">
+                <div id="quiz-intro">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Ready to test your knowledge?</h2>
+                    <p class="text-gray-600 mb-8">This quiz covers Social Influence, Research Methods, and Scientific Processes. There are 10 questions.</p>
+                    <button onclick="startQuiz()" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg">Start Quiz</button>
+                </div>
+
+                <div id="quiz-active" class="hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span id="question-number" class="text-indigo-600 font-bold text-lg uppercase tracking-wider">Question 1/10</span>
+                        <span id="score-display" class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold">Score: 0</span>
+                    </div>
+                    <div id="question-text" class="text-xl md:text-2xl font-semibold mb-8 text-gray-800"></div>
+                    <div id="options-container" class="grid gap-4">
+                        <!-- Options injected here -->
+                    </div>
+                    <div id="feedback" class="mt-6 p-4 rounded-xl hidden"></div>
+                    <div class="mt-8 flex justify-end">
+                        <button id="next-btn" onclick="nextQuestion()" class="hidden bg-gray-800 text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-700">Next Question <i class="fas fa-arrow-right ml-2"></i></button>
+                    </div>
+                </div>
+
+                <div id="quiz-results" class="hidden text-center">
+                    <h2 class="text-4xl font-bold mb-4">Quiz Complete!</h2>
+                    <div class="text-6xl font-extrabold text-indigo-600 mb-6" id="final-score">0/10</div>
+                    <p id="result-message" class="text-xl text-gray-600 mb-8"></p>
+                    <button onclick="startQuiz()" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg">Try Again</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 py-8 mt-12 border-t border-gray-200 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Psychology Revision Hub. Created for educational purposes.</p>
+    </footer>
+
+    <script>
+        // Navigation Logic
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            
+            const btnStudy = document.getElementById('btn-study');
+            const btnQuiz = document.getElementById('btn-quiz');
+            
+            if(tabName === 'study') {
+                btnStudy.classList.add('border-indigo-600', 'text-indigo-600');
+                btnStudy.classList.remove('border-transparent', 'text-gray-500');
+                btnQuiz.classList.remove('border-indigo-600', 'text-indigo-600');
+                btnQuiz.classList.add('border-transparent', 'text-gray-500');
+            } else {
+                btnQuiz.classList.add('border-indigo-600', 'text-indigo-600');
+                btnQuiz.classList.remove('border-transparent', 'text-gray-500');
+                btnStudy.classList.remove('border-indigo-600', 'text-indigo-600');
+                btnStudy.classList.add('border-transparent', 'text-gray-500');
+            }
+            window.scrollTo(0,0);
+        }
+
+        // Quiz Data
+        const quizData = [
+            {
+                q: "Which type of conformity involves a public change in behavior but no private change in opinion?",
+                a: ["Internalisation", "Identification", "Compliance", "Normative Influence"],
+                correct: 2,
+                reason: "Compliance is a superficial and temporary type of conformity where we go along with the majority but don't personally agree."
+            },
+            {
+                q: "What variable did Asch find reduced conformity by 25%?",
+                a: ["Increasing group size", "Task difficulty", "Presence of a dissenter", "Changing the uniform"],
+                correct: 2,
+                reason: "Unanimity is key; the presence of just one person who disagrees with the majority gives others the social support to resist."
+            },
+            {
+                q: "Which explanation for obedience suggests people act as agents for an authority figure?",
+                a: ["Authoritarian Personality", "Agentic State", "Legitimacy of Authority", "Locus of Control"],
+                correct: 1,
+                reason: "In the agentic state, an individual feels no personal responsibility for their actions, believing they are acting for someone else."
+            },
+            {
+                q: "Which research method involves manipulating an IV in a natural environment?",
+                a: ["Laboratory Experiment", "Natural Experiment", "Field Experiment", "Quasi-experiment"],
+                correct: 2,
+                reason: "Field experiments take place in the real world where the researcher still manipulates the Independent Variable."
+            },
+            {
+                q: "A study where the participant doesn't know they are being observed is called:",
+                a: ["Overt Observation", "Covert Observation", "Participant Observation", "Controlled Observation"],
+                correct: 1,
+                reason: "Covert observations are 'undercover', meaning participants are unaware they are the focus of research."
+            },
+            {
+                q: "What type of hypothesis predicts the specific direction of the results?",
+                a: ["Null Hypothesis", "Non-directional", "Directional", "Operationalised"],
+                correct: 2,
+                reason: "Directional hypotheses (one-tailed) state exactly which group will perform better or how the variable will change."
+            },
+            {
+                q: "Which sampling method ensures every member of the target population has an equal chance of being selected?",
+                a: ["Opportunity Sampling", "Random Sampling", "Stratified Sampling", "Systematic Sampling"],
+                correct: 1,
+                reason: "Random sampling is the fairest way to avoid researcher bias, though it can still result in a non-representative sample by chance."
+            },
+            {
+                q: "What is the primary aim of a pilot study?",
+                a: ["To get significant results", "To recruit participants", "To test the procedure and identify issues", "To publish a preliminary report"],
+                correct: 2,
+                reason: "Pilot studies are small-scale 'dry runs' to check that instructions are clear and the method works before spending money on the full study."
+            },
+            {
+                q: "Which feature of science refers to the possibility that a theory can be proven wrong?",
+                a: ["Objectivity", "Replicability", "Falsifiability", "Empiricism"],
+                correct: 2,
+                reason: "Karl Popper argued that for a theory to be truly scientific, it must be possible to imagine evidence that would disprove it."
+            },
+            {
+                q: "Which section of a scientific report provides a summary of the entire study?",
+                a: ["Introduction", "Results", "Abstract", "Discussion"],
+                correct: 2,
+                reason: "The abstract is a short summary (150-200 words) allowing researchers to quickly grasp the study's aims, method, and findings."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function startQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-active').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const data = quizData[currentQuestion];
+            document.getElementById('question-number').innerText = `Question ${currentQuestion + 1}/${quizData.length}`;
+            document.getElementById('score-display').innerText = `Score: ${score}`;
+            document.getElementById('question-text').innerText = data.q;
+            document.getElementById('next-btn').classList.add('hidden');
+            document.getElementById('feedback').classList.add('hidden');
+            
+            const optionsBox = document.getElementById('options-container');
+            optionsBox.innerHTML = '';
+            
+            data.a.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-300 hover:bg-indigo-50 transition font-medium text-gray-700";
+                btn.innerText = option;
+                btn.onclick = () => checkAnswer(index, btn);
+                optionsBox.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(idx, clickedBtn) {
+            const data = quizData[currentQuestion];
+            const allBtns = document.querySelectorAll('#options-container button');
+            
+            // Disable all buttons
+            allBtns.forEach(btn => btn.disabled = true);
+            
+            const feedback = document.getElementById('feedback');
+            feedback.classList.remove('hidden');
+
+            if(idx === data.correct) {
+                score++;
+                clickedBtn.classList.remove('border-gray-100');
+                clickedBtn.classList.add('border-green-500', 'bg-green-50', 'text-green-700');
+                feedback.className = "mt-6 p-4 rounded-xl bg-green-100 text-green-800 border border-green-200";
+                feedback.innerHTML = `<strong>Correct!</strong> ${data.reason}`;
+            } else {
+                clickedBtn.classList.remove('border-gray-100');
+                clickedBtn.classList.add('border-red-500', 'bg-red-50', 'text-red-700');
+                allBtns[data.correct].classList.add('border-green-500', 'bg-green-50');
+                feedback.className = "mt-6 p-4 rounded-xl bg-red-100 text-red-800 border border-red-200";
+                feedback.innerHTML = `<strong>Incorrect.</strong> ${data.reason}`;
+            }
+
+            document.getElementById('score-display').innerText = `Score: ${score}`;
+            document.getElementById('next-btn').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if(currentQuestion < quizData.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-active').classList.add('hidden');
+            document.getElementById('quiz-results').classList.remove('hidden');
+            document.getElementById('final-score').innerText = `${score}/${quizData.length}`;
+            
+            const msg = document.getElementById('result-message');
+            const percentage = (score / quizData.length) * 100;
+            
+            if(percentage === 100) msg.innerText = "Perfect score! You're ready for the exam!";
+            else if(percentage >= 70) msg.innerText = "Great job! You have a solid understanding.";
+            else if(percentage >= 50) msg.innerText = "Good effort. Review the study notes to improve.";
+            else msg.innerText = "Keep studying! Use the guide above to refresh your knowledge.";
+        }
+    </script>
+</body>
+</html>
